@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle } from 'lucide-react'; // Opsional, bisa pakai icon biasa
+import { CheckCircle } from 'lucide-react'; 
 
 const Features = () => {
   return (

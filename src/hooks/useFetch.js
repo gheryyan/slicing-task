@@ -1,9 +1,9 @@
-// src/hooks/useFetch.js
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useFetch = (url) => {
-  const [products, setProducts] = useState([]); // Default harus array kosong
+  const [products, setProducts] = useState([]); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -12,11 +12,9 @@ const useFetch = (url) => {
       try {
         const response = await axios.get(url);
         
-        // CEK DI KONSOL: Lihat struktur asli datanya
         console.log("Data API:", response.data);
 
-        // Jika response.data adalah array, langsung set. 
-        // Jika response.data adalah object yang punya properti 'products', ambil itu.
+       
         if (Array.isArray(response.data)) {
           setProducts(response.data);
         } else if (response.data && Array.isArray(response.data.products)) {

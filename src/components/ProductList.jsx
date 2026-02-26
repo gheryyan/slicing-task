@@ -2,7 +2,7 @@ import React from "react";
 import useFetch from "../hooks/useFetch";
 
 const ProductList = () => {
-  // Gunakan URL API dari dokumentasi Postman kamu
+
   const { products, loading, error } = useFetch(
     "https://lumoshive-api-furniture.vercel.app/api/products",
   );
@@ -24,12 +24,12 @@ const ProductList = () => {
         </p>
       </div>
 
-      {/* Grid Produk Responsif (Kriteria: 15%) */}
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {products && products.length > 0 ? (
           products.map((product) => (
             <div key={product.id} className="group cursor-pointer">
-              {/* ... isi card produk sama seperti sebelumnya ... */}
+           
               <div className="relative bg-gray-100 rounded-2xl overflow-hidden aspect-square">
                 <img
                   src={product.image}

@@ -8,16 +8,15 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Memanggil Komponen Navbar */}
+     
       <Navbar />
       
       <main>
-        {/* Memanggil Komponen Hero */}
+        
         <Hero />
         <Features />
         <ProductList />
         
-        {/* Nantinya komponen lain seperti ProductList akan ditaruh di sini */}
       </main>
       <Footer />
     </div>

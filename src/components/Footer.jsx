@@ -6,7 +6,7 @@ const Footer = () => {
 
   const handleSubscribe = (e) => {
     e.preventDefault();
-    const cleanEmail = sanitizeInput(email); // Langkah Sanitasi
+    const cleanEmail = sanitizeInput(email); 
     
     if (!validateEmail(cleanEmail)) {
       alert("Format email tidak valid!");
